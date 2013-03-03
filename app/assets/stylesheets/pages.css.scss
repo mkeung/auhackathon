@@ -2,9 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//-- ABOUT PAGE --
 .about_summary {
-
   margin-bottom: 15px;
   text-align: center;
 }
 
+.sponsors {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sponsor {
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.shoeboxed {
+  background-color: #00ADE2;
+}
+
+.lenovo {
+  background-color: #004878;
+}
+//-- END ABOUT PAGE --
+
+
+//-- TEAM PAGE --
+
+//-- END TEAM PAGE --

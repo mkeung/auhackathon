@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import 'bootstrap-responsive';
 body { 
-  padding-top: 100px; /* high because it needs to include navbar px */
+  padding-top: 140px; /* high because it needs to include navbar px */
   background: image_url("cloth_alike.png");
 
   h2 {
@@ -11,13 +11,14 @@ body {
   }
 
   h3 {
-    line-height: 1.2em;
-    font-size: 1em;
+    line-height: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
   }
 
   p {
     font-size: 1em;
+    padding-bottom: 15px;
   }
 
   h5 {
@@ -32,7 +33,23 @@ body {
     background-repeat: no-repeat;
     filter: none;
 
-    padding-top: 40px;
+    padding: 5px 0 5px 0;
+
+    ul {
+      padding-top: 40px;
+
+      li {
+        padding-left: 30px;
+
+        a, a:link, a:visited, a:active, a:hover {
+          color: #3A3A3A;
+          font-size: 1.3em;
+        }
+      }
+    }
+
+    
+
 
   }
 

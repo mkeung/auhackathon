@@ -1,0 +1,20 @@
+<% provide(:title, 'Pictures') %>
+<% provide(:head, @photo_album.title) %>
+
+<% if @photo_gallery %>
+  <% if @photo_gallery.albums.count == 1 %>
+    <p><%= link_to 'Back to Galleries', photo_galleries_path %>
+  <% else %>
+    <p><%= link_to 'Back to Gallery', photo_gallery_photo_albums_path(@photo_gallery.url_name) %>
+  <% end %>
+<% else %>
+  <p><%= link_to 'Back to Albums', photo_albums_path %>
+<% end %>
+
+<div id="spud_photo_galleries">
+  <% @photo_album.photos.each do |photo| %>
+    <div class="spud_photo_album_thumbnail">
+      <%= link_to image_tag(photo.photo.url(:medium), :alt => photo.caption, :title => photo.title), photo.photo.url(:large) %>
+    </div>
+  <% end %>
+</div>

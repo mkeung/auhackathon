@@ -2,16 +2,41 @@
 <% provide(:head, 'About the Event') %>
 
 <div class="about_summary">
-<%= image_tag("about_summary.png", :alt => "11 teams comprised of 41 hackers. Just 24 hours to build & pitch a product") %>
+<%= image_tag("about_summary.png", :alt => "10 teams comprised of 41 hackers. Just 24 hours to build & pitch a product") %>
 </div>
 
 <div class="content">
-  <h3>title of content</h3>
-  <p>content paragraph</p>
+  <h3>There are no rules</h3>
+  <p>The American Underground's first hackathon for developers and designers allowed participants to bring any idea or problem to the table. Teams formed up around these ideas and built a product from scratch <b>in 24 hours</b>. Everyone brought a sleeping bag, filled their cups with coffee, and got things done.</p>
+
+  <h3>Meeting new people</h3>
+  <p>The event brought together people from numerous groups, including computer science students from the local universities, enthusiasts, employed developers, and entrepreneurs. One individual even made the two hour drive from Charlotte to attend. The Startup Bus (startupbus.com) also arrived on the scene at the end of the event with passengers from NYC on the way to SXSW. We showcased what everyone had developed and got to see what was created on the bus so far.</p>
+
+  <h3>Thanks for making it happen!</h3>
+  <p>We had great turnout for our first hackathon! Thanks for showing up, we hope you had a great time. A special thanks goes to Kristian and the Thryv team (Thryv.com) for running the event, Ameya and Amy (Jobbertunity.com) for helping spread the word, and all the excellent sponsors below. Lenovo, Adzerk, and Shoeboxed made sure everyone had plenty to eat and snack on while the American Underground, Triangle Startup Factory, and Groundwork Labs provided the prizes and facilities.</p>
 </div>
 
 <h2>Sponsors</h2>
+<div class="sponsors row">
+  <div class="sponsor shoeboxed span4">
+    <%= link_to(image_tag("logo_shoeboxed.png"), "https://www.shoeboxed.com/") %>
+  </div>
+  <div class="sponsor span4">
+    <%= link_to(image_tag("logo_adzerk.png"), "http://www.adzerk.com/") %>
+  </div>
+  <div class="sponsor lenovo span4">
+    <%= link_to(image_tag("logo_lenovo.png"), "http://www.lenovo.com/") %>
+  </div>
+</div>
 
-<div class="content">
-  <p>Sponsor descriptions</p>
+<div class="sponsors row">
+  <div class="sponsor span4">
+    <%= link_to(image_tag("logo_au.png"), "http://www.americanunderground.com/") %>
+  </div>
+  <div class="sponsor span4">
+    <%= link_to(image_tag("logo_gwl.png"), "http://groundworklabs.com/") %>
+  </div>
+  <div class="sponsor span4">
+    <%= link_to(image_tag("logo_tsf.png"), "http://trianglestartupfactory.com/") %>
+  </div>
 </div>
