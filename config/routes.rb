@@ -1,5 +1,9 @@
 Auhack::Application.routes.draw do
-  get "pages/about"
+  root to: 'pages#about'
+
+  match '/about',     to: 'pages#about'
+  match '/teams',     to: 'pages#teams'
+  match '/pictures',  to: 'pages#pictures'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
