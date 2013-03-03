@@ -1,6 +1,37 @@
 @import "bootstrap";
 @import 'bootstrap-responsive';
 body { 
-  padding-top: 60px;
+  padding-top: 100px; /* high because it needs to include navbar px */
   background: image_url("cloth_alike.png");
+
+  .navbar-inner {
+    background-color: #DEDEDE;
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+
+    padding-top: 40px;
+
+  }
+
+  .page_header {
+    background-color: #DA5B34;
+    padding: 30px 20px 11px 20px;
+    margin: 0 -20px 13px -20px; /* negative indent the amount of the padding to maintain the grid system */
+    
+    font-size: 1.4em;
+    color: #FFFFFF;
+
+    border-bottom: solid #C95430 9px;
+  }
+
+  .footer {
+    margin: 13px -20px 0 -20px;
+    padding: 30px 20px 30px 20px;
+    background-color: #424242;
+    color: #FFFFFF;
+
+    border-top: solid #6E6562 9px;
+  }
+
 }
