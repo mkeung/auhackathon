@@ -4,12 +4,13 @@
     <div class="span3">
       <div class="row">
         <div class="span3">
-          Connect & Socialize
+          <h5>Connect & Socialize</h5>
         </div>
       </div>
       <div class="row">
         <div class="span3">
-          facebook twitter
+          <%= link_to(image_tag("footer_facebook.png"), "http://www.facebook.com/AmericanUnderground") %>
+          <%= link_to(image_tag("footer_twitter.png"), "https://twitter.com/AmerUnderground") %>
         </div>
       </div>
     </div>
@@ -17,21 +18,30 @@
     <div class="span4">
       <div class="row">
         <div class="span4">
-          Learn More
+          <h5>Learn More</h5>
         </div>
       </div>
       <div class="row">
         <div class="span2">
-          column 1
+          <ul>
+            <li><%= link_to("American Underground", "http://www.americanunderground.com/") %></li>
+            <li><%= link_to("Startup Bus", "http://startupbus.com/") %></li>
+          </ul>
         </div>
         <div class="span2">
-          column 2
+          <ul>
+            <li><%= link_to("SXSW", "http://sxsw.com/") %></li>
+            <li><%= link_to("Durham, NC", "http://durhamnc.gov/") %></li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div class="span5">
-      copyright
+    <div class="copyright span5">
+      <p>
+        © 2013 American Underground Hackathon.
+        <br>All Rights Reserved.</br>
+      </p>
     </div>
 
   </div>
