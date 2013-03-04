@@ -1,5 +1,9 @@
 @import "bootstrap";
 @import 'bootstrap-responsive';
+html {
+    overflow-y: scroll;
+}
+
 body { 
   padding-top: 140px; /* high because it needs to include navbar px */
   background: image_url("cloth_alike.png");
