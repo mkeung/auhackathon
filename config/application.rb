@@ -63,7 +63,7 @@ end
 
 if Rails.env == "production"
   # set credentials from ENV hash
-  S3_CREDENTIALS = { :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET'], :bucket => "auhack"}
+  S3_CREDENTIALS = { :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET'], :bucket => "sharedearth-production"}
 else
   # get credentials from YML file
   S3_CREDENTIALS = Rails.root.join("config/s3.yml")
@@ -79,8 +79,8 @@ Spud::Photos.configure do |config|
     :large => '400x400#',
     :huge => '600x600'
   }
-  config.paperclip_storage = :s3 #use :s3 to use s3 storage (aws gem required)
-      config.s3_credentials = "#{Rails.root}/config/s3.yml"
+  config.paperclip_storage = :s3
+      config.s3_credentials = S3_CREDENTIALS
       config.storage_path = ":rails_root/public/system/spud_photos/:id/:style/:basename.:extension"
       config.storage_url = "/system/spud_photos/:id/:style/:basename.:extension"
 end
