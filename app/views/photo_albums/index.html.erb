@@ -6,13 +6,13 @@
   <p><%= link_to 'Back to Galleries', photo_galleries_path %></p>
 <% end %>
 
-<div id="spud_photo_albums">
-  <% @photo_albums.each do |album| %>
+<% @photo_albums.each do |album| %>
+  <div class="spud_photo_albums">
     <h2>
       <%= link_to album.title, (@photo_gallery ? photo_gallery_photo_album_path(@photo_gallery.url_name, album.url_name) : photo_album_path(album.url_name)) %>
     </h2>
     <div class="spud_photo_album_thumbnail">
-      <%= image_tag album.top_photo_url(:large), :title => album.title %>
+      <%= image_tag album.top_photo_url(:medium), :title => album.title %>
     </div>
-  <% end %>
-</div>
+  </div>
+<% end %>

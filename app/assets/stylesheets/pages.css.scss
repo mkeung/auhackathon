@@ -44,8 +44,11 @@
 //-- END TEAM PAGE --
 
 //-- PHOTOS --
-.spud_photo_album_thumbnail {
-  border: 1px solid #484848;
+.spud_photo_albums, .spud_photo_album_thumbnail {
   float:left;
   margin: 0 10px 10px 0;
+}
+
+.spud_photo_album_thumbnail {
+  border: 1px solid #484848;
 }
